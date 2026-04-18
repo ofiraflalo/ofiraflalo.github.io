@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ofir Aflalo</title>
 
   <style>
@@ -12,61 +13,120 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      color: #222;
     }
 
-    .container {
-      background-color: rgba(255, 255, 255, 0.9);
-      max-width: 900px;
+    .page {
+      max-width: 950px;
       margin: 40px auto;
-      padding: 30px;
-      border-radius: 12px;
+      padding: 20px;
     }
 
-    h1, h2 {
-      color: #333;
+    .hero {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      padding: 35px 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    .hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 48px;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      line-height: 1.7;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 34px;
+      color: #1f2d3d;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 16px;
     }
 
     a {
-      color: #0077cc;
+      color: #0b66c3;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    .email {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .footer {
+      text-align: center;
+      color: #444;
+      font-size: 15px;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 14px;
+      padding: 12px;
+    }
   </style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="page">
 
-  <h1>Ofir Aflalo</h1>
-  <p><b>M.Sc. student in Chemistry at the Weizmann Institute of Science</b></p>
+    <div class="hero">
+      <h1>Ofir Aflalo</h1>
+      <p>M.Sc. student in Chemistry at the Weizmann Institute of Science</p>
+    </div>
 
-  <hr>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m an M.Sc. student at the Weizmann Institute of Science, currently doing a rotation in
+        <strong>Prof. David Margulies’s lab</strong>, which focuses on supramolecular protein recognition,
+        sensing, and mimicry.
+      </p>
 
-  <h2>About Me</h2>
-  <p>
-    I’m an M.Sc. student at the Weizmann Institute of Science, currently doing a rotation in 
-    <b>Prof. David Margulies’s lab</b>, which focuses on supramolecular protein recognition, sensing, and mimicry.
-  </p>
+      <p>
+        <strong>Lab webpage:</strong><br>
+        <a href="https://www.weizmann.ac.il/csb/margulies/" target="_blank">
+          Prof. David Margulies Lab
+        </a>
+      </p>
 
-  <p>
-    Lab webpage:<br>
-    <a href="https://www.weizmann.ac.il/csb/margulies/" target="_blank">
-      https://www.weizmann.ac.il/csb/margulies/
-    </a>
-  </p>
+      <p>
+        I completed my B.Sc. in Chemistry and Biology at Bar-Ilan University.
+      </p>
+    </div>
 
-  <p>
-    I completed my B.Sc. in Chemistry and Biology at Bar-Ilan University.
-  </p>
+    <div class="card">
+      <h2>Contact</h2>
+      <p class="email">
+        <a href="mailto:ofir.aflalo@weizmann.ac.il">ofir.aflalo@weizmann.ac.il</a>
+      </p>
+    </div>
 
-  <h2>Contact</h2>
-  <p>ofir.aflalo@weizmann.ac.il</p>
+    <div class="footer">
+      Personal academic webpage
+    </div>
 
-</div>
+  </div>
 
 </body>
 </html>
